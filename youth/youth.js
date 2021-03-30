@@ -86,13 +86,13 @@ if ($.isNode()) {
   } else {
       ARTBODYs = process.env.YOUTH_ARTBODY.split()
   };
-  
+/*  
   if (process.env.YOUTH_REDBODY && process.env.YOUTH_REDBODY.indexOf('&') > -1) {
   REDBODYs = process.env.YOUTH_REDBODY.split('&');
   } else {
       REDBODYs = process.env.YOUTH_REDBODY.split()
   };
-  
+*/  
   if (process.env.YOUTH_TIME && process.env.YOUTH_TIME.indexOf('&') > -1) {
   READTIME = process.env.YOUTH_TIME.split('&');
   }else {
@@ -111,11 +111,11 @@ if ($.isNode()) {
           readArr.push(ARTBODYs[item])
         }
       })
-    Object.keys(REDBODYs).forEach((item) => {
+/*     Object.keys(REDBODYs).forEach((item) => {
         if (REDBODYs[item]) {
           redpArr.push(REDBODYs[item])
         }
-      })
+      }) */ 
     Object.keys(READTIME).forEach((item) => {
         if (READTIME[item]) {
           timeArr.push(READTIME[item])
@@ -150,7 +150,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
       signheaderVal = cookiesArr[i];
       articlebodyVal = readArr[i];
       timebodyVal = timeArr[i];
-      redpbodyVal = redpArr[i];
+      //redpbodyVal = redpArr[i];
       $.index = i + 1;
       console.log(`-------------------------\n\n开始【中青看点${$.index}】`)
     }
