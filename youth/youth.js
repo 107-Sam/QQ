@@ -173,7 +173,7 @@ else if ($.time('HH')>4&&$.time('HH')<8){
   await getAdVideo();
   await gameVideo();
   await readArticle();
-  await Articlered();
+  //await Articlered();
   await readTime();
 for ( j=0;j<6;j++){
   console.log("等待20s进行时长任务")
