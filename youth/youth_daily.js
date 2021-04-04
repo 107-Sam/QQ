@@ -114,7 +114,8 @@ let Account = ["【Sam】"];
       await exec();
       await $.wait(1000); 
                      }   
-     else if(m==3 && days%5==0 && $.time('HH')==10||m==3 && days%5==0 && $.time('HH')==11) {
+    // else if(m==3 && days%5==0 && $.time('HH')==10||m==3 && days%5==0 && $.time('HH')==11) {
+     else if(m==3 && $.time('HH')==10||m==3 && $.time('HH')==11) {
       await exec500();
       await $.wait(1000); 
                      }  
