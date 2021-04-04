@@ -14,7 +14,10 @@ jobs:
         YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
         YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD }}
         YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD }}
-        YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD }}        
+        YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD }}
+        YOUTH_DAILY_HD_SOPHIE: ${{ secrets.YOUTH_DAILY_HD_SOPHIE }}
+        YOUTH_DAILY_BD_SOPHIE: ${{ secrets.YOUTH_DAILY_BD_SOPHIE }}
+        YOUTH_DAILYREWARD_BD_SOPHIE: ${{ secrets.YOUTH_DAILYREWARD_BD_SOPHIE }}     
         TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -27,11 +30,32 @@ jobs:
         run: |
           npm install
           
-      - name: '运行 【youth_daily】'
+      - name: '运行 【youth_daily_SamQ】'
         if: env.YOUTH_DAILY_HD
         run: |
           node youth/youth_daily.js
         env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+      
+      - name: '运行 【youth_daily_Sophie】'
+        if: env.YOUTH_DAILY_HD_SOPHIE
+        run: |
+          node youth/youth_daily.js
+        env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD_SOPHIE }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD_SOPHIE }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD_SOPHIE }}   
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
