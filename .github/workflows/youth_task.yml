@@ -13,7 +13,8 @@ jobs:
     env:
         YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL }}
         YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD }}
-        #YOUTH_TASK_BD: ${{ secrets.YOUTH_TASK_BD }}    
+        YOUTH_TASK_URL_SOPHIE: ${{ secrets.YOUTH_TASK_URL_SOPHIE }}
+        YOUTH_TASK_HD_SOPHIE: ${{ secrets.YOUTH_TASK_HD_SOPHIE }}        
         TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -26,11 +27,13 @@ jobs:
         run: |
           npm install
           
-      - name: '运行 【youth_task】'
+      - name: '运行 【youth_task_SamQ】'
         if: env.YOUTH_TASK_HD
         run: |
           node youth/youth_task.js
         env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD }}       
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
@@ -38,3 +41,19 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          
+      - name: '运行 【youth_task_Sophie】'
+        if: env.YOUTH_TASK_HD_SOPHIE
+        run: |
+          node youth/youth_task.js
+        env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL_SOPHIE }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD_SOPHIE }}       
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+         
