@@ -63,3 +63,71 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          
+      - name: '运行 【youth_daily_WYDSZ】'
+        if: env.YOUTH_DAILY_HD_WYDSZ
+        run: |
+          node youth/youth_daily.js
+        env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD_WYDSZ }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD_WYDSZ }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD_WYDSZ }}   
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}        
+
+      - name: '运行 【youth_daily_RL】'
+        if: env.YOUTH_DAILY_HD_RL
+        run: |
+          node youth/youth_daily.js
+        env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD_RL }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD_RL }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD_RL }}   
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          
+      - name: '运行 【youth_daily_QF】'
+        if: env.YOUTH_DAILY_HD_QF
+        run: |
+          node youth/youth_daily.js
+        env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD_QF }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD_QF }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD_QF }}   
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }} 
+          
+      - name: '运行 【youth_daily_JH】'
+        if: env.YOUTH_DAILY_HD_JH
+        run: |
+          node youth/youth_daily.js
+        env:
+          YOUTH_DAILY_URL: ${{ secrets.YOUTH_DAILY_URL }}
+          YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD_JH }}
+          YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD_JH }}
+          YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD_JH }}   
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}          
