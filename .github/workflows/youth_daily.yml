@@ -18,6 +18,9 @@ jobs:
         YOUTH_DAILY_HD_SOPHIE: ${{ secrets.YOUTH_DAILY_HD_SOPHIE }}
         YOUTH_DAILY_BD_SOPHIE: ${{ secrets.YOUTH_DAILY_BD_SOPHIE }}
         YOUTH_DAILYREWARD_BD_SOPHIE: ${{ secrets.YOUTH_DAILYREWARD_BD_SOPHIE }}     
+        YOUTH_DAILY_HD_WYDSZ: ${{ secrets.YOUTH_DAILY_HD_WYDSZ }}
+        YOUTH_DAILY_BD_WYDSZ: ${{ secrets.YOUTH_DAILY_BD_WYDSZ }}
+        YOUTH_DAILYREWARD_BD_WYDSZ: ${{ secrets.YOUTH_DAILYREWARD_BD_WYDSZ }}          
         TZ: Asia/shanghai
     steps:
       - name: Checkout
