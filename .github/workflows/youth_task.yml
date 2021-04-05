@@ -56,4 +56,63 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          
+      - name: '运行 【youth_task_WYDSZ】'
+        if: env.YOUTH_TASK_HD_WYDSZ
+        run: |
+          node youth/youth_task.js
+        env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL_WYDSZ }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD_WYDSZ }}       
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+
+      - name: '运行 【youth_task_RL】'
+        if: env.YOUTH_TASK_HD_RL
+        run: |
+          node youth/youth_task.js
+        env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL_RL }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD_RL }}       
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
          
+      - name: '运行 【youth_task_QF】'
+        if: env.YOUTH_TASK_HD_QF
+        run: |
+          node youth/youth_task.js
+        env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL_QF }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD_QF }}       
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          
+      - name: '运行 【youth_task_JH】'
+        if: env.YOUTH_TASK_HD_JH
+        run: |
+          node youth/youth_task.js
+        env:
+          YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL_JH }}
+          YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD_JH }}       
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}          
