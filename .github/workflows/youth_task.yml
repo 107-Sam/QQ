@@ -14,7 +14,15 @@ jobs:
         YOUTH_TASK_URL: ${{ secrets.YOUTH_TASK_URL }}
         YOUTH_TASK_HD: ${{ secrets.YOUTH_TASK_HD }}
         YOUTH_TASK_URL_SOPHIE: ${{ secrets.YOUTH_TASK_URL_SOPHIE }}
-        YOUTH_TASK_HD_SOPHIE: ${{ secrets.YOUTH_TASK_HD_SOPHIE }}        
+        YOUTH_TASK_HD_SOPHIE: ${{ secrets.YOUTH_TASK_HD_SOPHIE }} 
+        YOUTH_TASK_URL_WYDSZ: ${{ secrets.YOUTH_TASK_URL_WYDSZ }}
+        YOUTH_TASK_HD_WYDSZ: ${{ secrets.YOUTH_TASK_HD_WYDSZ }}   
+        YOUTH_TASK_URL_RL: ${{ secrets.YOUTH_TASK_URL_RL }}
+        YOUTH_TASK_HD_RL: ${{ secrets.YOUTH_TASK_HD_RL }}
+        YOUTH_TASK_URL_QF: ${{ secrets.YOUTH_TASK_URL_QF }}
+        YOUTH_TASK_HD_QF: ${{ secrets.YOUTH_TASK_HD_QF }}  
+        YOUTH_TASK_URL_JH: ${{ secrets.YOUTH_TASK_URL_JH }}
+        YOUTH_TASK_HD_JH: ${{ secrets.YOUTH_TASK_HD_JH }}  
         TZ: Asia/shanghai
     steps:
       - name: Checkout
