@@ -8,7 +8,7 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 let REFERERArr = [], REFERER = "";
 let articleurl = process.env.YOUTH_URL_SHARE;
 let articlehd = process.env.YOUTH_HD_SHARE;
-let Account = ["【SamQ】","【JH】"];
+let Account = ["【SamQ】","【JH】","【QYW】"];
 
 if (process.env.YOUTH_REFERER_SHARE && process.env.YOUTH_REFERER_SHARE.indexOf('\n') > -1) {
   REFERER = process.env.YOUTH_REFERER_SHARE.split('\n');
