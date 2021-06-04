@@ -96,9 +96,9 @@ let Account = ["【Sam】"];
     // detail = `【账号】${account}\n`;
    if(i==0) await time();
       await $.wait(1000); 
-   if(i==1 && $.time('HH')==4||i==1 && $.time('HH')==10||i==1 && $.time('HH')==22) await share();
+   if(i==1 && $.time('HH')==5||i==1 && $.time('HH')==10||i==1 && $.time('HH')==22) await share();
       await $.wait(1000); 
-   if(i==2 && $.time('HH')==4||i==2 && $.time('HH')==10||i==2 && $.time('HH')==22) await beread();
+   if(i==2 && $.time('HH')==5||i==2 && $.time('HH')==10||i==2 && $.time('HH')==22) await beread();
       await $.wait(1000); 
    if(i==3) for (let m = 0; m < 4; m++) {
       articleBD = TimeBDArr[m]
