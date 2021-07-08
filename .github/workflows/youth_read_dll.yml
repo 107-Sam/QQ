@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
-        YOUTH_READ_DLL_1: ${{ secrets.YOUTH_READ_DLL_1 }}
-        YOUTH_READ_DLL_2: ${{ secrets.YOUTH_READ_DLL_2 }}
-        YOUTH_READ_DLL_3: ${{ secrets.YOUTH_READ_DLL_3 }}
-        YOUTH_READ_DLL_4: ${{ secrets.YOUTH_READ_DLL_4 }}
+        #YOUTH_READ_DLL_1: ${{ secrets.YOUTH_READ_DLL_1 }}
+        #YOUTH_READ_DLL_2: ${{ secrets.YOUTH_READ_DLL_2 }}
+        #YOUTH_READ_DLL_3: ${{ secrets.YOUTH_READ_DLL_3 }}
+        #YOUTH_READ_DLL_4: ${{ secrets.YOUTH_READ_DLL_4 }}
         TZ: Asia/shanghai
     steps:
       - name: Checkout
