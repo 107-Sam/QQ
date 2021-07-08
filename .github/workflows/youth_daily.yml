@@ -15,21 +15,21 @@ jobs:
         YOUTH_DAILY_HD: ${{ secrets.YOUTH_DAILY_HD }}
         YOUTH_DAILY_BD: ${{ secrets.YOUTH_DAILY_BD }}
         YOUTH_DAILYREWARD_BD: ${{ secrets.YOUTH_DAILYREWARD_BD }}
-        YOUTH_DAILY_HD_SOPHIE: ${{ secrets.YOUTH_DAILY_HD_SOPHIE }}
-        YOUTH_DAILY_BD_SOPHIE: ${{ secrets.YOUTH_DAILY_BD_SOPHIE }}
-        YOUTH_DAILYREWARD_BD_SOPHIE: ${{ secrets.YOUTH_DAILYREWARD_BD_SOPHIE }}     
-        YOUTH_DAILY_HD_WYDSZ: ${{ secrets.YOUTH_DAILY_HD_WYDSZ }}
-        YOUTH_DAILY_BD_WYDSZ: ${{ secrets.YOUTH_DAILY_BD_WYDSZ }}
-        YOUTH_DAILYREWARD_BD_WYDSZ: ${{ secrets.YOUTH_DAILYREWARD_BD_WYDSZ }}          
+        #YOUTH_DAILY_HD_SOPHIE: ${{ secrets.YOUTH_DAILY_HD_SOPHIE }}
+        #YOUTH_DAILY_BD_SOPHIE: ${{ secrets.YOUTH_DAILY_BD_SOPHIE }}
+        #YOUTH_DAILYREWARD_BD_SOPHIE: ${{ secrets.YOUTH_DAILYREWARD_BD_SOPHIE }}     
+        #YOUTH_DAILY_HD_WYDSZ: ${{ secrets.YOUTH_DAILY_HD_WYDSZ }}
+        #YOUTH_DAILY_BD_WYDSZ: ${{ secrets.YOUTH_DAILY_BD_WYDSZ }}
+        #YOUTH_DAILYREWARD_BD_WYDSZ: ${{ secrets.YOUTH_DAILYREWARD_BD_WYDSZ }}          
         YOUTH_DAILY_HD_RL: ${{ secrets.YOUTH_DAILY_HD_RL }}
         YOUTH_DAILY_BD_RL: ${{ secrets.YOUTH_DAILY_BD_RL }}
         YOUTH_DAILYREWARD_BD_RL: ${{ secrets.YOUTH_DAILYREWARD_BD_RL }}    
         YOUTH_DAILY_HD_QF: ${{ secrets.YOUTH_DAILY_HD_QF }}
         YOUTH_DAILY_BD_QF: ${{ secrets.YOUTH_DAILY_BD_QF }}
         YOUTH_DAILYREWARD_BD_QF: ${{ secrets.YOUTH_DAILYREWARD_BD_QF }}    
-        YOUTH_DAILY_HD_JH: ${{ secrets.YOUTH_DAILY_HD_JH }}
-        YOUTH_DAILY_BD_JH: ${{ secrets.YOUTH_DAILY_BD_JH }}
-        YOUTH_DAILYREWARD_BD_JH: ${{ secrets.YOUTH_DAILYREWARD_BD_JH }}            
+        #YOUTH_DAILY_HD_JH: ${{ secrets.YOUTH_DAILY_HD_JH }}
+        #YOUTH_DAILY_BD_JH: ${{ secrets.YOUTH_DAILY_BD_JH }}
+        #YOUTH_DAILYREWARD_BD_JH: ${{ secrets.YOUTH_DAILYREWARD_BD_JH }}            
         TZ: Asia/shanghai
     steps:
       - name: Checkout
